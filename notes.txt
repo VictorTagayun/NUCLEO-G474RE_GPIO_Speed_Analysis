@@ -1,0 +1,10 @@
+Project : NUCLEO-G474RE_GPIO_Speed_Analysis
+Purpose : Check which command will generate highest freq on IOs by toggling in while loop
+Strategy: Check HAL, LL, HRTIM and register level toggle
+
+** GPIO **
+18.9Mhz if have HAL_HRTIM_WaveformOutputStart(&hhrtim1, HRTIM_OUTPUT_TE1);
+
+
+** HRTIM **
+USE E1
